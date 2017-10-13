@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Simple Interest</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript">
+        function cal(){
+            var principle = parseFloat(document.getElementById('p').value);
+            var interest = parseFloat(document.getElementById('i').value);
+            var time = parseFloat(document.getElementById('t').value);
+            document.getElementById('out').value = (principle * interest * time)/100;
+        }
+    </script>
+  </head>
+
+  <body>
+    <h1>Calculator</h1>
+    <form name="myform">
+      Enter Principle <input type="text" id="p">
+      Enter Interest Rate <input type="text" id="i">
+      Enter Time <input type="text" id="t">
+      <input type="button" value="Calculate" onclick="cal()"><br><br>
+      Simple Interest is <input type="text" id="out">
+    </form>
+  </body>
+
+</html>
